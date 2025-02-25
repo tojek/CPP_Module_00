@@ -1,4 +1,5 @@
 #include "PhoneBook.hpp"
+#include <sstream>
 
 int	main()
 {
@@ -14,8 +15,10 @@ int	main()
 		if (cmd == "ADD")
 			phoneBook.addContact();
 		else if (cmd == "SEARCH")
+		{
 			phoneBook.displayContacts();
-			//phoneBook.searchContact();
+			phoneBook.searchContact();
+		}
 		else if (cmd == "EXIT")
 			break;
 		else

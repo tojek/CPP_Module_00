@@ -4,6 +4,7 @@
 #include "Contact.hpp"
 #include <iomanip>
 #include <iostream>
+#include <string>
 
 class PhoneBook
 {
@@ -15,6 +16,7 @@ class PhoneBook
 		~PhoneBook();
 		void		addContact();
 		void		displayContacts();
+		void		searchContactID(int id);
 		void		searchContact();
 };
 

@@ -7,7 +7,6 @@
 class Contact
 {
 	private:
-
 		std::string		phoneNumber;
 		std::string		darkestSecret;
 
@@ -15,9 +14,12 @@ class Contact
 		std::string		firstName;
 		std::string		lastName;
 		std::string		nickname;
-		void	setContact();
-		void	displayContactDetail();
-		std::string truncField(std::string &field);
+
+		void			setContact();
+		void			displayContactDetail();
+		std::string 	truncField(std::string &field);
+		std::string 	getNonEmptyInput(std::string prompt);
+
 };
 
 
